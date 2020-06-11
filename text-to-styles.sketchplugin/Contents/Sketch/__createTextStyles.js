@@ -16466,7 +16466,7 @@ function generateTextStyles(json) {
         // assumption is that there is only one adjusment
         var name = item.name.split("/");
         typeStyles.push({
-          name: "".concat(name[0], "/").concat(colour, "/").concat(index + "_" + align + (name.length > 1 ? "/" + name[1] : "")),
+          name: "".concat(colour, "/").concat(name[0], "/").concat(index + "_" + align + (name.length > 1 ? "/" + name[1] : "") + (name.length > 2 ? "/" + name[2] : "")),
           style: _objectSpread({
             textColor: sketch_dom__WEBPACK_IMPORTED_MODULE_0___default.a.Style.colorToString(json.colours[colour]),
             alignment: align
